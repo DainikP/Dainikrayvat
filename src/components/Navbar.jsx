@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className="p-4 bg-gray-800 text-white flex justify-between">
-      <Link to="/">Home</Link>
+      <Link to="/home">Home</Link>
       <div>
         <Link to="/checkout" className="relative">
           Cart ({cartCount})
