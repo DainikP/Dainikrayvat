@@ -15,6 +15,10 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!credentials.username || !credentials.password) {
+      alert('Please fill in all fields');
+      return;
+    }
     dispatch(login(credentials));
   };
 
